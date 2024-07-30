@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="../CSS/test.css">
+</head>
+<body>
+    <div class="stopwatch">
+        <h1>Stopwatch</h1>
+        <h2 id="watch">00</h2>
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            
+        </div>
+    <script>
+        
+        let timer;
+        let second =0;
+        function StartTimer(){
+            timer = setInterval(updateTime, 100)
+        }
+           
+        function updateTime() {
+            seconds++;
+          
+        } 
+    </script>
+    
+</body>
+</html>
